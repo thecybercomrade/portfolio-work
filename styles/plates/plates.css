@@ -1,0 +1,147 @@
+svg {
+  height: 78px;
+  position: absolute;
+  width: 78px;
+}
+
+svg.burger {
+  margin-top: -7px;
+}
+
+svg.x {
+  height: 60px;
+}
+
+.plate {
+  height: 60px;
+  width: 60px;
+}
+
+.burger {
+  -webkit-filter: url(#gooeyness);
+          filter: url(#gooeyness);
+}
+
+.x {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.line {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, -webkit-transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms, -webkit-transform 500ms 200ms;
+}
+
+.x .line {
+  stroke-width: 5.5px;
+}
+
+.active .line {
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
+}
+
+.active .x {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms 350ms;
+  transition: -webkit-transform 400ms 350ms;
+  transition: transform 400ms 350ms;
+  transition: transform 400ms 350ms, -webkit-transform 400ms 350ms;
+}
+
+@media (max-width: 796px) {
+  /* El segundo plato */
+  .plates {
+    width: 320px;
+  }
+}
+
+.plate2 .line1 {
+  stroke-dasharray: 21 185.62753295898438;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.plate2 .line2 {
+  stroke-dasharray: 21 178.6514129638672;
+  -webkit-transition-delay: 30ms;
+          transition-delay: 30ms;
+}
+
+.plate2 .line3 {
+  stroke-dasharray: 21 197.92425537109375;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+}
+
+.plate2 .line4 {
+  stroke-dasharray: 21 190.6597137451172;
+  -webkit-transition-delay: 90ms;
+          transition-delay: 90ms;
+}
+
+.plate2 .line5 {
+  stroke-dasharray: 21 208.52874755859375;
+  -webkit-transition-delay: 120ms;
+          transition-delay: 120ms;
+}
+
+.plate2 .line6 {
+  stroke-dasharray: 21 186.59703063964844;
+  -webkit-transition-delay: 150ms;
+          transition-delay: 150ms;
+}
+
+.active.plate2 .line1 {
+  stroke-dasharray: 5 185.62753295898438;
+  stroke-dashoffset: -141px;
+}
+
+.active.plate2 .line2 {
+  stroke-dasharray: 5 178.6514129638672;
+  stroke-dashoffset: -137px;
+}
+
+.active.plate2 .line3 {
+  stroke-dasharray: 5 197.92425537109375;
+  stroke-dashoffset: -176px;
+}
+
+.active.plate2 .line4 {
+  stroke-dasharray: 5 190.6597137451172;
+  stroke-dashoffset: -159px;
+}
+
+.active.plate2 .line5 {
+  stroke-dasharray: 5 208.52874755859375;
+  stroke-dashoffset: -139px;
+}
+
+.active.plate2 .line6 {
+  stroke-dasharray: 5 186.59703063964844;
+  stroke-dashoffset: -176px;
+}
+
+.active.plate2 .x {
+  -webkit-transition: -webkit-transform 400ms 250ms;
+  transition: -webkit-transform 400ms 250ms;
+  transition: transform 400ms 250ms;
+  transition: transform 400ms 250ms, -webkit-transform 400ms 250ms;
+}
+/*# sourceMappingURL=plates.css.map */
