@@ -71,10 +71,63 @@ body {
 
 // banner section
 .banner-section {
+  overflow: hidden;
+
+  .container {
+    overflow: hidden;
+  }
 
   .banner {
     display: grid;
     grid-template-columns: 70% auto;
     column-gap: 2em;
+  }
+
+  .about {
+    p:first-child {
+      font-size: 1em;
+    }
+
+    p:nth-child(2) {
+      font-size: 4em;
+    }
+
+    p:nth-child(3) {
+      font-size: 1.5em;
+    }
+
+    p:nth-child(4) {
+      font-weight: bolder;
+      margin-top: 20px;
+      line-height: 2em;
+      letter-spacing: 0.2em;
+    }
+
+    .button-sec {
+      margin-top: 3em;
+
+      a{
+      margin-right: 3em;
+      text-decoration: none;
+      list-style: none;
+      color: black;
+      font-size: 1em;
+      font-weight: bold;
+      }
+    }
+  }
+
+  .banner-img {
+    height: 550px;
+    width: 400px;
+    object-fit: contain;
+    overflow: hidden;
+
+    img {
+     height: inherit;
+     width: inherit;
+     border-radius: 10px;
+     position: absolute;
+    }
   }
 }

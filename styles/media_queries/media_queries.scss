@@ -1,6 +1,9 @@
+// 796px and below
 @media (max-width: 796px) {
   .header {
     nav {
+      padding: 1.2em;
+
       .nav-links {
         display: none;
       }
@@ -14,13 +17,16 @@
   }
 
   .slider-nav {
-    width: 220px;
-    float: right;
     display: none;
+
+    .slider-nav-links {
+      display: flex;
+      justify-content: center;
+    }
 
     ul {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: flex-end;
       list-style: none;
 
@@ -36,8 +42,73 @@
 
     animation: animateSlideMenu 0.3s ease-in-out;
   }
+
+  .banner-section {
+    margin-top: 20px;
+
+    .banner {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .banner-img {
+      height: 100px;
+      width: 100px;
+      padding-bottom: 20px;
+
+      img {
+        border-radius: 50%;
+        border: 2px solid var(--accent-color);
+      }
+    }
+
+    .about {
+      padding-top: 20px;
+
+      p:first-child {
+        font-size: 1em;
+      }
+  
+      p:nth-child(2) {
+        font-size: 3em;
+        line-height: 1em;
+        padding: 10px 0px;
+      }
+  
+      p:nth-child(3) {
+        font-size: 1.5em;
+      }
+  
+      p:nth-child(4) {
+        font-weight: bolder;
+        margin-top: 20px;
+        line-height: 2em;
+        letter-spacing: 0.2em;
+      }
+  
+      .button-sec {
+        margin: 3em 0px;
+        display: flex;
+        flex-wrap: wrap;
+  
+        a{
+        margin-right: 1em;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 0.6em;
+        }
+      }
+    }
+
+
+  }
 }
 
+
+// 797 px and above
 @media (min-width: 797px) {
   
   .slider-nav {
@@ -49,10 +120,10 @@
 // Keyframes
 @keyframes animateSlideMenu{
   0%{
-    transform: translateX(250px);
+    transform: translateY(-250px);
   }
 
   100%{
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }

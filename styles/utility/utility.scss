@@ -14,3 +14,11 @@
     overflow: auto;
     padding: 0 40px;
 }
+
+.btn {
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 1.2em;
+    box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+}

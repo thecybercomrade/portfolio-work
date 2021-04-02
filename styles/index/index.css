@@ -71,6 +71,14 @@ body {
   display: none;
 }
 
+.banner-section {
+  overflow: hidden;
+}
+
+.banner-section .container {
+  overflow: hidden;
+}
+
 .banner-section .banner {
   display: -ms-grid;
   display: grid;
@@ -78,5 +86,52 @@ body {
       grid-template-columns: 70% auto;
   -webkit-column-gap: 2em;
           column-gap: 2em;
+}
+
+.banner-section .about p:first-child {
+  font-size: 1em;
+}
+
+.banner-section .about p:nth-child(2) {
+  font-size: 4em;
+}
+
+.banner-section .about p:nth-child(3) {
+  font-size: 1.5em;
+}
+
+.banner-section .about p:nth-child(4) {
+  font-weight: bolder;
+  margin-top: 20px;
+  line-height: 2em;
+  letter-spacing: 0.2em;
+}
+
+.banner-section .about .button-sec {
+  margin-top: 3em;
+}
+
+.banner-section .about .button-sec a {
+  margin-right: 3em;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.banner-section .banner-img {
+  height: 550px;
+  width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+.banner-section .banner-img img {
+  height: inherit;
+  width: inherit;
+  border-radius: 10px;
+  position: absolute;
 }
 /*# sourceMappingURL=index.css.map */
