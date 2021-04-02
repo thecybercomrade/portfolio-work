@@ -41,9 +41,6 @@
 }
 
 @media (min-width: 797px) {
-  body {
-    background-color: lightcoral;
-  }
   .slider-nav {
     display: none;
   }
