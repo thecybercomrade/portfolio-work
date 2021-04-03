@@ -103,8 +103,7 @@ body {
 .banner-section .about p:nth-child(4) {
   font-weight: bolder;
   margin-top: 20px;
-  line-height: 2em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 .banner-section .about .button-sec {
@@ -133,5 +132,69 @@ body {
   width: inherit;
   border-radius: 10px;
   position: absolute;
+}
+
+.about-me-section {
+  margin-top: 5em;
+}
+
+.about-me-section p:first-child {
+  font-size: 3em;
+  padding: 0px 0px 0.3em 0px;
+}
+
+.about-me-section p:nth-child(2) {
+  font-size: 1em;
+  color: var(--primary-color);
+  padding-bottom: 2em;
+}
+
+.about-me-section .about-me-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+      grid-template-columns: 30% auto;
+}
+
+.about-me-section .about-me-img {
+  height: 550px;
+  width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+.about-me-section .about-me-img img {
+  height: inherit;
+  width: inherit;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.about-me-section .about-me-content {
+  padding-left: 10em;
+}
+
+.about-me-section .about-me-content :nth-child(3) {
+  letter-spacing: 0.1em;
+}
+
+.about-me-section .about-me-content :nth-child(4) {
+  letter-spacing: 0.1em;
+  padding-top: 2em;
+}
+
+.about-me-section .about-me-content :nth-child(5) {
+  letter-spacing: 0.1em;
+  padding-top: 2em;
+  font-style: italic;
+  font-size: large;
+  color: var(--accent-color);
+}
+
+.about-me-section .about-me-content :nth-child(6) {
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+  float: right;
 }
 /*# sourceMappingURL=index.css.map */

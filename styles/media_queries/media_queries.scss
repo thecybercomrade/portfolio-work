@@ -1,5 +1,5 @@
-// 796px and below
-@media (max-width: 796px) {
+// 800px and below
+@media (max-width: 800px) {
   .header {
     nav {
       padding: 1.2em;
@@ -68,62 +68,62 @@
       p:first-child {
         font-size: 1em;
       }
-  
+
       p:nth-child(2) {
         font-size: 3em;
         line-height: 1em;
         padding: 10px 0px;
       }
-  
+
       p:nth-child(3) {
         font-size: 1.5em;
       }
-  
+
       p:nth-child(4) {
         font-weight: bolder;
         margin-top: 20px;
         line-height: 2em;
         letter-spacing: 0.2em;
       }
-  
+
       .button-sec {
         margin: 3em 0px;
         display: flex;
         flex-wrap: wrap;
-  
-        a{
-        margin-right: 1em;
-        text-decoration: none;
-        list-style: none;
-        color: black;
-        font-size: 1em;
-        font-weight: bold;
-        padding: 0.6em;
+
+        a {
+          margin-right: 1em;
+          text-decoration: none;
+          list-style: none;
+          color: black;
+          font-size: 1em;
+          font-weight: bold;
+          padding: 0.6em;
         }
       }
     }
-
-
   }
 }
 
+// 1328px and below
+@media (max-width: 1328px) {
+
+}
 
 // 797 px and above
 @media (min-width: 797px) {
-  
   .slider-nav {
     display: none;
   }
 }
 
-
 // Keyframes
-@keyframes animateSlideMenu{
-  0%{
+@keyframes animateSlideMenu {
+  0% {
     transform: translateY(-250px);
   }
 
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
