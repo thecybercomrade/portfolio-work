@@ -103,6 +103,29 @@
       }
     }
   }
+
+
+  // about me section
+  .about-me-section {
+
+    .about-me-grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .about-me-img {
+        display: none;
+      }
+
+      .about-me-content {
+        padding: 0px;
+
+        :nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 // 1328px and below

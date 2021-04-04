@@ -103,6 +103,26 @@
     font-weight: bold;
     padding: 0.6em;
   }
+  .about-me-section .about-me-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me-section .about-me-grid .about-me-img {
+    display: none;
+  }
+  .about-me-section .about-me-grid .about-me-content {
+    padding: 0px;
+  }
+  .about-me-section .about-me-grid .about-me-content :nth-child(2) {
+    display: none;
+  }
 }
 
 @media (min-width: 797px) {
